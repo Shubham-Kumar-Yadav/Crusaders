@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .over{
+    background-image: url('robots sample/script.png');
+    repeat: none;
+    width: 200px;
+} */
+
+
+.over{
+    z-index: ;
+    
+}
+
+.bac{
+    z-index: 1;
+    margin-top: -100%;
+    
+}
+
+img{
+    width: 200px;
+}
+
+
+.pen{
+    animation: mymov 5s linear infinite;
+    position: relative;
+}
+
+
+@keyframes mymov{
+    0%{
+        right: -10px;
+        top: -5px;
+    }
+    25%{
+        right: 30px;
+        top: -25px;
+    }
+    50%{
+        right: -10px;
+        top: -5px;
+    }
+    75%{
+        right: 30px;
+        top: -25px;
+    }
+    100%{
+        right: -10px;
+        top: -5px;
+    }
+}
