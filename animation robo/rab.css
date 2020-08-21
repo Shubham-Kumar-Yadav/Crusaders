@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.robot1{
+    text-align: center;
+}
+
+
+svg{
+    width: 200px;
+    margin-top: -20%;
+}
+
+
+#g1131 {
+    
+    position: absolute;
+    animation: myfirst 5s infinite linear;
+    transform-origin: -600px -250.23496px;
+    transform: rotate(-30deg);
+    transform-style: preserve-3d;
+  }
+
+
+
+@keyframes myfirst {
+   
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    /* 25%{
+        transform: rotate(-110deg);
+        
+    } */
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+  }
+
+
+
+#g1052 {
+    position: absolute;
+    animation: animhan 2.5s linear infinite;
+    transform-origin: -720.19173px -250.23496px;
+    transform: rotate(-30deg);
+    transform-style: preserve-3d;
+    /* transition: transform 1s linear infinite; */
+}
+
+@keyframes animhan {
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    /* 25%{
+        transform: rotate(-110deg);
+        
+    } */
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
