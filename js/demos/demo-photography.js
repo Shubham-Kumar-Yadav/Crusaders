@@ -1,8 +1,4 @@
-/*
-Name: 			Photography
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	8.0.0
-*/
+
 
 // Demo Config
 theme.PluginScrollToTop.initialize = function() {};
@@ -105,9 +101,7 @@ theme.PluginScrollToTop.initialize = function() {};
 		$('#revolutionSlider').revolution(sliderOptions);
 	});
 
-	/*
-	Custom Portfolio Details Load More 
-	*/
+
 	var portfolioDetailLoadMore = {
 
 		pages: 0,
@@ -237,9 +231,7 @@ theme.PluginScrollToTop.initialize = function() {};
 		portfolioDetailLoadMore.build();
 	}
 
-	/*
-	Custom Portfolio Infinite Scroll 
-	*/
+
 	var portfolioInfiniteScroll = {
 
 		pages: 0,
@@ -488,9 +480,7 @@ theme.PluginScrollToTop.initialize = function() {};
 		ajaxOnPagePortfolioDetails.build();
 	}
 
-	/*
-	* Portfolio Grid - Init isotope
-	*/
+
 	$(window).on('load', function() {
 		var $portfolioGrid = $('#portfolioGrid'),
 			$ourBlog       = $('#ourBlog'),

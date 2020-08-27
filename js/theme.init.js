@@ -1,4 +1,4 @@
-// Commom Plugins
+
 (function($) {
 
 	'use strict';
@@ -145,29 +145,7 @@
 
 }).apply(this, [jQuery]);
 
-// Countdown
-(function($) {
 
-	'use strict';
-
-	if ($.isFunction($.fn['themePluginCountdown'])) {
-
-		$(function() {
-			$('[data-plugin-countdown]:not(.manual), .countdown').each(function() {
-				var $this = $(this),
-					opts;
-
-				var pluginOptions = theme.fn.getOptions($this.data('plugin-options'));
-				if (pluginOptions)
-					opts = pluginOptions;
-
-				$this.themePluginCountdown(opts);
-			});
-		});
-
-	}
-
-}).apply(this, [jQuery]);
 
 // Counter
 (function($) {

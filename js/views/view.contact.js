@@ -1,8 +1,4 @@
-/*
-Name: 			View - Contact
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	8.0.0
-*/
+
 
 (function($) {
 
@@ -191,8 +187,7 @@ Theme Version:	8.0.0
 
 						if (data.response == 'success') {
 
-							// Uncomment the code below to redirect for a thank you page
-							// self.location = 'thank-you.html';
+						
 
 							$messageSuccess.removeClass('d-none');
 							$messageError.addClass('d-none');
