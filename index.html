@@ -601,10 +601,27 @@
 						</div>
 					</div>
 					<div class="text-center">
-						<a href="#" class="btn btn-dark btn-rounded btn-modern btn-px-5 text-3 appear-animation"
-							data-appear-animation="fadeIn" data-appear-animation-delay="300" target="_blank">Register to
+						<a class="btn btn-dark btn-rounded btn-modern btn-px-5 text-3 appear-animation"
+							data-appear-animation="fadeIn" data-appear-animation-delay="300" target="_blank" onclick="openForm()">Register to
 							subscribe our Newsletter</a>
 					</div>
+				<div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <div class="text-center">
+                            <p class="sub-title text-primary text-4 font-weight-semibold positive-ls-2 mt-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" data-appear-animation-duration="750">Registration<span class="highlighted-word highlighted-word-animation-1 highlighted-word-animation-1-2 highlighted-word-animation-1 highlighted-word-animation-1-no-rotate alternative-font-4 font-weight-semibold line-height-2 pb-2">
+								</span></p>
+                        </div>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="btn">Login</button>
+                        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
 				</div>
 			</section>
 
