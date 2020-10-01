@@ -45,6 +45,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="dark-mode.css">
 </head>
 
 <body class="alternative-font-4 loading-overlay-showing" data-plugin-page-transition data-loading-overlay
@@ -600,10 +601,27 @@
 						</div>
 					</div>
 					<div class="text-center">
-						<a href="#" class="btn btn-dark btn-rounded btn-modern btn-px-5 text-3 appear-animation"
-							data-appear-animation="fadeIn" data-appear-animation-delay="300" target="_blank">Register to
+						<a class="btn btn-dark btn-rounded btn-modern btn-px-5 text-3 appear-animation"
+							data-appear-animation="fadeIn" data-appear-animation-delay="300" target="_blank" onclick="openForm()">Register to
 							subscribe our Newsletter</a>
 					</div>
+				<div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <div class="text-center">
+                            <p class="sub-title text-primary text-4 font-weight-semibold positive-ls-2 mt-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" data-appear-animation-duration="750">Registration<span class="highlighted-word highlighted-word-animation-1 highlighted-word-animation-1-2 highlighted-word-animation-1 highlighted-word-animation-1-no-rotate alternative-font-4 font-weight-semibold line-height-2 pb-2">
+								</span></p>
+                        </div>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="btn">Login</button>
+                        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
 				</div>
 			</section>
 
@@ -683,6 +701,17 @@
 			</div>
 		</footer>
 	</div>
+	<!-- for darkmode toggle switch -->
+<script src="dark-mode-switch.min.js"></script>
+	<script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
 </body>
 <!-- Vendor -->
 <script src="vendor/jquery/jquery.min.js"></script>
